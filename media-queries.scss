@@ -1,15 +1,45 @@
-@media screen and (max-width: 700px){
-   body{
-       overflow: hidden;
-   }
+@media screen and (max-width: 991px){
    
+   
+    .main-content{
+
+        header{
+            padding:30px;
+        }
+       padding:40px;
+       display: flex;
+      
+       justify-content: space-between;
+       .text{
+           
+           h2{font-size:3em;
+           }
+           h3{
+               font-size:2em;
+           }
+           a{
+               padding: 5px 15px;
+               letter-spacing:1px;
+               text-transform: uppercase;
+               transition: 0.2s;
+               &:hover{
+                   letter-spacing: 3px;
+               }
+   
+           }
+       }
+   }
+
+  
     .social-icons{
         position:absolute;
           display: flex;
-         left:0;
+         left:10%;
          bottom:20px;
-            justify-content: center;
-            align-items: center;
+            justify-content: start;
+            align-items: start;
     }
+
+    
   
 }
