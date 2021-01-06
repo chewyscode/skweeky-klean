@@ -1,0 +1,15 @@
+@media screen and (max-width: 700px){
+   body{
+       overflow: hidden;
+   }
+   
+    .social-icons{
+        position:absolute;
+          display: flex;
+         left:0;
+         bottom:20px;
+            justify-content: center;
+            align-items: center;
+    }
+  
+}

@@ -1,10 +1,153 @@
+@import 'media-queries';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,300&display=swap');
+
+
 *{
     margin:0;
     padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
+//landing page
 .main-content{
-    video{
+    position:absolute;
+    right:0;
+    width:100%;
+    min-height:100vh;
+    padding:100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(187, 180, 180);
+    color:white;
+    z-index: 2;
+    .text{
+        position:relative;
+        z-index: 10;
+        h2{
+            font-size:5rem;
+            font-weight: 800;
+            line-height: 1em;
+            text-transform: uppercase;
+        }
+        h3{
+            font-size:2.5rem;
+            font-weight: 700;
+            line-height: 1em;
+            text-transform: uppercase; 
+        }
+        p{
+            font-size:1.1rem;
+            margin:20px 0;
+            font-weight:400;
+            max-width: 600px;;
+        }
+        a{
+            display: inline-block;
+            font-size:1em;
+            background:#fff;
+            padding: 10px 30px;
+            text-decoration: none;
+            color:black;
+            margin-top:10px;
+            letter-spacing:2px;
+            text-transform: uppercase;
+            transition: 0.2s;
+            &:hover{
+                letter-spacing: 6px;
+
+            }
+        }
+    }
+
+    .overlay{
+        position: absolute;
+        top:0;
+        left:0;
         width:100%;
+        height:100%;
+        background:#03a9f4;
+        mix-blend-mode: overlay;
+
+    
+    }
+
+    header{
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        padding:40px 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+
+       
+    
+    .toggle{
+        position:relative;
+        width:60px;
+        height:60px;
+        background:url('/assets/white-burger-menu.png');
+        background-repeat: no-repeat;
+        background-size:30px;
+        background-position: center;
+        cursor: pointer;
+
+       
+    }
+    .logo{
+        text-transform: uppercase;
+        cursor: pointer;
     }
 }
+   .toggle.active{
+    background:url('/assets/white-x-cross.png');
+    background-repeat: no-repeat;
+    background-size:25px;
+    color:white;
+    background-position: center;
+    cursor: pointer;
+   } 
+    video{
+       
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        opacity:0.9;
+    }
+    img{
+        height:5vh;
+    }
+}
+.social-icons{
+    position:absolute;
+      
+     right:5%;
+     bottom:40%;
+        justify-content: center;
+        align-items: center;
+   li{
+       padding-top:20px;
+      list-style:none;
+      a{
+        display: inline-block;
+          margin-right:30px;
+          transition: 0.3s;
+          &:hover{
+              transform: scale(1.2) translateY(-15px);
+          }
+
+      }
+   }
+}
+
+.menu{
+    display:none;
+}
+//End of landing page
