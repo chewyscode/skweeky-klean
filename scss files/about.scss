@@ -1,8 +1,4 @@
-@import 'media-queries';
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,300&display=swap');
-
-
 *{
     margin:0;
     padding:0;
@@ -10,9 +6,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-//landing page
+//about page
 .main-content{
-    position:absolute;
+    position:relative;
     right:0;
     width:100%;
     min-height:100vh;
@@ -20,20 +16,24 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background: grey;
+    background:  linear-gradient(to bottom, blue,aqua);
     color:white;
     z-index: 2;
     transition: 0.5s;
-
+   
     
     .text{
-        position:relative;
+        
         z-index: 10;
         h2{
-            font-size:5rem;
+            font-size:5.5rem;
             font-weight: 800;
             line-height: 1em;
             text-transform: uppercase;
+            text-emphasis: outline;
+            position:absolute;
+            top:25%;
+            right:35%;
         }
         h3{
             font-size:2.5rem;
@@ -64,17 +64,9 @@
             }
         }
     }
-    .overlay{
-        position: absolute;
-        top:0;
-        left:0;
-        width:100%;
-        height:100%;
-        background:#03a9f4;
-        mix-blend-mode: overlay;
 
-    
-    }
+
+
    
 
     header{
@@ -115,14 +107,14 @@
     background-position: center;
     cursor: pointer;
    } 
-    video{
+    svg{
        
         position: absolute;
         top:0;
         left:0;
         width:100%;
         height:100%;
-        object-fit:cover;
+        
         opacity:0.9;
     }
     img{
@@ -177,6 +169,46 @@
       }
   }
  }
-    
+ .custom-shape-divider-bottom-1610031413 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
-//End of landing page
+.custom-shape-divider-bottom-1610031413 svg {
+    position: relative;
+    display: block;
+    width: calc(119% + 1.3px);
+    height: 279px;
+}
+
+.custom-shape-divider-bottom-1610031413 .shape-fill {
+    fill:white;
+}
+.custom-shape-divider-top-1610087928 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1610087928 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 214px;
+}
+
+.custom-shape-divider-top-1610087928 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+//End of about page
