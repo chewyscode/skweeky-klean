@@ -147,7 +147,7 @@
 }
 .social a{
 	padding: 20px;
-	color:#7b7c7c;
+	color:#03a9f4;
 	font-size:1.1rem;
 }
 #contact{
@@ -168,11 +168,11 @@
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
 }
 .social a:hover{
-	color:#000000;
+	color:blue;
 	transition: all ease 0.3s;
 }
 .contact-box{
-	background-color:#434445;
+	background-color:rgb(4, 4, 92);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -231,7 +231,7 @@
 .c-inputs button{
 	width:200px;
 	height: 40px;
-	background-color: #FFFFFF;
+	background-color: blue;
 	border: none;
 	outline: none;
 	margin-top: 20px;
@@ -250,17 +250,27 @@
 	background-color: rgba(0,0,0,0.1);
 }
 .c-inputs button:active{
-	transform: scale(1.02);
+	transform: scale(1.22);
 }
 .map{
 	filter: grayscale(0.2);
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
 	border: 2px solid #FFFFFF;
 }
+span{
+    color:#03a9f4;
+    &:hover{
+        color:white;
+        cursor:pointer;
+    }
+}
 @media(max-width:1100px){
 	.map{
 		display: none;
-	}
+    }
+    .logo{
+        display:none;
+    }
 }
 @media(max-width:450px){
 	.social{
