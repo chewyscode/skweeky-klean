@@ -14,19 +14,11 @@
     right:0;
     width:100%;
     padding:100px;
-    display:grid;
     height:320vh;
+    display:grid;
     grid-template-columns: 30% 30% 30%;
     grid-column-gap:5%;
     grid-row-gap:5%;
-    @media screen and (max-width:998px){
-        .main-content{
-            padding:50px;
-            width: 100%;
-            display:grid;
-            grid-template-columns: 1fr;
-        }
-    }
     background:  linear-gradient(to bottom, blue,aqua);
     color:white;
     z-index: 2;
@@ -162,4 +154,27 @@
 .buttons{
     padding:25px;
     
+}
+
+@media screen and (max-width:998px){
+    .main-content{
+        height:900vh;
+        padding:10px;
+         grid-template-columns:1fr;
+         grid-row-gap:1%;
+         .logo{
+             display:none;
+         }
+         .toggle{
+            position:absolute;
+            right:20px;
+
+         }
+
+    }
+    .buttons{
+        padding-left:80px;
+        
+    }
+   
 }
