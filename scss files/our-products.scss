@@ -15,17 +15,19 @@
     width:100%;
     padding:100px;
     display:grid;
+    height:320vh;
     grid-template-columns: 30% 30% 30%;
     grid-column-gap:5%;
-    grid-row-gap:10%;
+    grid-row-gap:5%;
     @media screen and (max-width:998px){
         .main-content{
+            padding:50px;
             width: 100%;
             display:grid;
             grid-template-columns: 1fr;
         }
     }
-    background:  linear-gradient(to bottom, rgb(17, 90, 226),aqua);
+    background:  linear-gradient(to bottom, blue,aqua);
     color:white;
     z-index: 2;
     transition: 0.5s;
@@ -110,12 +112,6 @@
         
         opacity:0.9;
     }
-   
-    
-
-
-
-
 
  .main-content.active{
     right:300px;
@@ -145,22 +141,25 @@
   }
  }
  
- .custom-shape-divider-top-1610791839 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
+ .btn {
+    display: inline-block;
+    background:blue;
+    color:white;
+    padding:0.5rem;
+    border:none;
+    cursor:pointer;
+    text-decoration: none;
+    font-size:1rem;
+    margin-right: 0.5rem;
+    outline:none;
+    transition: all 0.3s ease-in;
+    &:hover{
+        background:lighten(blue, 10%);
+        color:white;
+    }
+    
 }
-
-.custom-shape-divider-top-1610791839 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 301px;
-}
-
-.custom-shape-divider-top-1610791839 .shape-fill {
-    fill: #FFFFFF;
+.buttons{
+    padding:25px;
+    
 }
