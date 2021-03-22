@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--AOS Library-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/scss files/our-services.css">
@@ -20,7 +22,7 @@
         </header>
    
         
-        <div class="content-2">
+        <div class="content-2" data-aos="zoom-in">
            
            <h2>Pool Cleaning</h2>
            <p class="lead">Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut sint ab.
@@ -28,7 +30,7 @@
           
        </div>
           <div>
-            <img src="assets/service 1.jpg" alt="">
+            <img src="assets/service 1.jpg" alt="" data-aos="fade-up">
            <h2 class="large-text gym-heading">Sides and bottom</h2>
            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
            <div class="buttons">
@@ -37,7 +39,7 @@
            </div>
           </div>
           <div>
-            <img src="assets/service 2.jpg" alt="">
+            <img src="assets/service 2.jpg" alt="" data-aos="fade-up">
            <h2 class="large-text gym-heading">Full Pool</h2>
            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
            <div class="buttons">
@@ -45,14 +47,14 @@
             <a href="#!" class="btn">More Info</a>
            </div>
           </div>
-          <div>
+          <div data-aos="fade-right">
             
            <h2 class="large-text gym-heading">Acid Washing</h2>
            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
            
        </div>
           <div>
-            <img src="assets/service 3.jpg" alt="">
+            <img src="assets/service 3.jpg" alt="" data-aos="fade-up">
            <h2 class="large-text gym-heading">1/2 Wash </h2>
            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
            <div class="buttons">
@@ -61,7 +63,7 @@
            </div>
           </div>
           <div>
-            <img src="assets/service 4.jpg" alt="">
+            <img src="assets/service 4.jpg" alt="" data-aos="fade-up">
            <h2 class="large-text gym-heading">Full scrape and wash</h2>
            <p class="lead">Lorem Lorem ipsum dolor sit amet consectetur adipisicing. ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
            <div class="buttons">
@@ -69,14 +71,14 @@
             <a href="#!" class="btn">More Info</a>
            </div>
           </div>
-          <div class="content-2">
+          <div class="content-2" data-aos="fade-right">
           
            <h2>Digging</h2>
            <p class="lead">Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore doloribus iusto corporis? ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
           
        </div>
           <div>
-            <img src="assets/service 5.jpg" alt="">
+            <img src="assets/service 5.jpg" alt="" data-aos="fade-up">
            <h2 class="large-text gym-heading">Initial Hole</h2>
            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
            <div class="buttons">
@@ -85,7 +87,7 @@
            </div>
           </div>
           <div>
-            <img src="assets/service 6.jpg" alt="">
+            <img src="assets/service 6.jpg" alt="" data-aos="fade-up">
            <h2 class="large-text gym-heading">Inirial hole and cementing</h2>
            <p class="lead">Lorem ipsum dolor sit. ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
            <div class="buttons">
@@ -115,5 +117,16 @@
     <!--End of landing Page-->
 
     <script src="script.js"></script>
+
+    <!--Scroll Functions-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     
+  <script>
+    AOS.init({
+       // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 2000 // values from 0 to 3000, with step 50ms
+    });
+  </script>
 </body>
 </html>

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!--AOS Library-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/scss files/our-products.css">
@@ -22,7 +24,7 @@
       
         
 
-      <div class="content-2">
+      <div class="content-2" data-aos="zoom-in">
         <img src="assets/product 1.png" alt="">
        <h2>HTH Pool Shocker</h2>
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
@@ -32,7 +34,7 @@
            <a href="#!" class="btn">More Info</a>
        </div>
    </div>
-      <div>
+      <div data-aos="zoom-in">
         <img src="assets/product 2.png" alt="">
        <h2 class="large-text gym-heading">HTH Granular+ </h2>
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
@@ -41,7 +43,7 @@
         <a href="#!" class="btn">More Info</a>
        </div>
       </div>
-      <div>
+      <div data-aos="zoom-in">
         <img src="assets/product 3.png" alt="">
        <h2 class="large-text gym-heading">HTH Pool Acid</h2>
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
@@ -50,8 +52,8 @@
         <a href="#!" class="btn">More Info</a>
        </div>
       </div>
-      <div>
-        <img src="assets/product 4.png" alt="">
+      <div data-aos="fade-up">
+        <img src="assets/product 4.png" alt="" >
        <h2 class="large-text gym-heading">PoolBoss Gramula 500</h2>
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
        <div class="buttons">
@@ -59,7 +61,7 @@
         <a href="#!" class="btn">More Info</a>
        </div>
    </div>
-      <div>
+      <div data-aos="fade-up">
         <img src="assets/product 5.png" alt="">
        <h2 class="large-text gym-heading">Blu52 All-In-One</h2>
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
@@ -68,7 +70,7 @@
         <a href="#!" class="btn">More Info</a>
        </div>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <img src="assets/product 6.png" alt="">
        <h2 class="large-text gym-heading">Pool Magic Alti-acid</h2>
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
@@ -77,7 +79,7 @@
         <a href="#!" class="btn">More Info</a>
        </div>
       </div>
-      <div class="content-2">
+      <div class="content-2" data-aos="fade-up">
         <img src="assets/product 7.png" alt="">
        <h2>Blu52 Turbo Clear</h2>
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
@@ -86,8 +88,8 @@
            <a href="#!" class="btn">Buy Now</a>
            <a href="#!" class="btn">More Info</a>
        </div>
-   </div>
-      <div>
+   </div data-aos="fade-up">
+      <div data-aos="fade-up">
         <img src="assets/product 8.png" alt="">
        <h2 class="large-text gym-heading">PoolBrite Ultra Bright</h2>
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
@@ -96,7 +98,7 @@
         <a href="#!" class="btn">More Info</a>
        </div>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <img src="assets/product 9.png" alt="">
        <h2 class="large-text gym-heading">Chlorine Granules</h2>
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam consequatur hic iure illum Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias ipsam nesciunt</p>
@@ -123,5 +125,16 @@
     <!--End of landing Page-->
  
     <script src="script.js"></script>
+  </script>
+  <!--Scroll Functions-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     
+    <script>
+      AOS.init({
+         // offset (in px) from the original trigger point
+          delay: 0, // values from 0 to 3000, with step 50ms
+          duration: 2000 // values from 0 to 3000, with step 50ms
+      });
+    </script>
 </body>
 </html>
